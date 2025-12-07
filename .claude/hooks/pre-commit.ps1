@@ -131,7 +131,7 @@ if ($TriAgentEnabled) {
     # Codex
     if (Get-Command codex -ErrorAction SilentlyContinue) {
         Write-Host "Codex (GPT-5.1): " -NoNewline
-        $result = codex -q $ReviewPrompt 2>$null
+        $result = codex -q "$ReviewPrompt" 2>$null
         if ($result -match "reject") {
             Write-Host "REJECT" -ForegroundColor Red
         } else {
@@ -144,7 +144,7 @@ if ($TriAgentEnabled) {
     # Gemini
     if (Get-Command gemini -ErrorAction SilentlyContinue) {
         Write-Host "Gemini (3 Pro Preview): " -NoNewline
-        $result = gemini -m gemini-3-pro-preview -y $ReviewPrompt 2>$null
+        $result = gemini -m gemini-3-pro-preview -y "$ReviewPrompt" 2>$null
         if ($result -match "reject") {
             Write-Host "REJECT" -ForegroundColor Red
         } else {
