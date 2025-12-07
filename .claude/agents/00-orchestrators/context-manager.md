@@ -1,7 +1,7 @@
 ---
 name: context-manager
 description: Manages project context, loads relevant files, and maintains awareness of the current project state. Use when starting a session or when context needs to be refreshed.
-model: claude-haiku-4-5-20251001
+model: haiku
 tools: [Read, Glob, Grep, Bash]
 ---
 

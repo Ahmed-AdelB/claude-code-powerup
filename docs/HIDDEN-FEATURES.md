@@ -102,7 +102,7 @@ Add to `~/.bashrc` or `~/.zshrc`:
 
 ```bash
 # Quick Claude Code access
-alias cc='claude --dangerously-skip-permissions'
+alias cc='claude -c'  # Continue with confirmation
 alias ccc='claude -c'  # Continue last session
 alias ccr='claude -r'  # Resume by ID
 

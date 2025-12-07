@@ -24,22 +24,12 @@ copy /Y .mcp.json C:\Users\%USERNAME%\.mcp.json
 ## What's Included
 
 ### Agents (25)
-| Category | Examples |
-|----------|----------|
-| 01-general-purpose | Router, orchestrator |
-| 02-planning | Architect, designer |
-| 03-backend | API, database, services |
-| 04-frontend | React, UI/UX |
-| 05-database | SQL, migrations |
-| 06-testing | Unit, integration, e2e |
-| 07-quality | Code review, linting |
-| 08-security | Vulnerability, audit |
-| 09-performance | Optimization, profiling |
-| 10-devops | CI/CD, Docker, K8s |
-| 11-cloud | AWS, Azure, GCP |
-| 12-ai-ml | ML models, data |
-| 13-integration | APIs, webhooks |
-| 14-business | Analysis, requirements |
+| Category | Count | Examples |
+|----------|-------|----------|
+| 00-orchestrators | 7 | orchestrator, task-router, context-manager, session-manager |
+| 01-core-engineers | 6 | backend-engineer, frontend-engineer, database-specialist |
+| 02-specialists | 10 | security-expert, code-reviewer, architect, ml-engineer |
+| integrations | 2 | codex-sdlc-developer, gemini-reviewer |
 
 ### Commands (20+)
 - `/sdlc:brainstorm` - Generate ideas

@@ -1,7 +1,6 @@
 ---
 name: gemini-reviewer
 description: Gemini-powered code reviewer using CLI. Expert in security analysis, code quality validation, and design review. Part of tri-agent consensus workflow.
-model: claude-sonnet-4-5-20250929
 tools: [Read, Bash, Glob, Grep]
 ---
 

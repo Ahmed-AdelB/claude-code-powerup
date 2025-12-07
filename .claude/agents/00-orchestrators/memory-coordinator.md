@@ -1,7 +1,7 @@
 ---
 name: memory-coordinator
 description: Coordinates memory systems including vector memory, project ledger, and error knowledge graph. Use for semantic search, version history, and error pattern learning.
-model: claude-haiku-4-5-20251001
+model: haiku
 tools: [Read, Write, Bash]
 ---
 
