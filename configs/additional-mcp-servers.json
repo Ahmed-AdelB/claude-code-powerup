@@ -1,0 +1,45 @@
+{
+  "description": "Additional MCP servers to enhance Claude Code capabilities",
+  "instructions": "Merge these into your ~/.claude.json mcpServers section",
+  "mcpServers": {
+    "postgres": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-postgres"],
+      "env": {
+        "POSTGRES_CONNECTION_STRING": "postgresql://user:pass@localhost:5432/db"
+      },
+      "description": "PostgreSQL database queries and schema inspection"
+    },
+    "sqlite": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-sqlite", "--db-path", "~/.claude/memory.db"],
+      "description": "Local SQLite database for persistent storage"
+    },
+    "fetch": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-fetch"],
+      "description": "Enhanced web fetching with better parsing"
+    },
+    "brave-search": {
+      "command": "npx",
+      "args": ["-y", "@anthropic/mcp-server-brave-search"],
+      "env": {
+        "BRAVE_API_KEY": "<your-brave-api-key>"
+      },
+      "description": "Brave Search API for web searches"
+    },
+    "notion": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-notion"],
+      "env": {
+        "NOTION_API_KEY": "<your-notion-api-key>"
+      },
+      "description": "Notion workspace integration"
+    },
+    "playwright": {
+      "command": "npx",
+      "args": ["-y", "@playwright/mcp"],
+      "description": "Microsoft Playwright browser automation"
+    }
+  }
+}
