@@ -5,8 +5,8 @@
 - **ChatGPT Pro** ($200): Codex CLI for prototyping, o3-pro for debugging
 - **Google AI Pro** ($20): Gemini 3 Pro Preview (gemini-3-pro-preview), 1M token context
 
-## 85+ Specialized Agents (14 Categories)
-1. **General Purpose** (6): orchestrator, task-router, context-manager, session-manager, memory-coordinator, parallel-coordinator
+## 25 Specialized Agents (3 Categories + 2 Integrations)
+1. **Orchestrators** (7): orchestrator, task-router, context-manager, session-manager, memory-coordinator, parallel-coordinator, risk-assessor
 2. **Planning** (8): requirements-analyst, architect, tech-spec-writer, risk-assessor, exponential-planner, product-manager, ux-researcher, tech-lead
 3. **Backend** (10): backend-developer, api-architect, django-expert, fastapi-expert, nodejs-expert, rails-expert, go-expert, graphql-specialist, microservices-architect, authentication-specialist
 4. **Frontend** (10): frontend-developer, react-expert, nextjs-expert, vue-expert, angular-expert, typescript-expert, ui-component-builder, shadcn-ui-adapter, accessibility-specialist, state-management-expert
@@ -97,11 +97,15 @@ Tri-Agent Approval:
 Co-Authored-By: Claude <noreply@anthropic.com>
 ```
 
-## MCP Servers
+## MCP Servers (8 Active)
 - **git**: Version control operations
 - **github**: Issues, PRs, repos via API
 - **postgres**: Database queries and schema
 - **filesystem**: File system access
+- **memory**: Persistent context across sessions
+- **sqlite**: Local SQLite database
+- **fetch**: Enhanced web fetching
+- **puppeteer**: Browser automation
 
 ## CLI Tool Usage (CRITICAL)
 

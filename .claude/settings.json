@@ -179,7 +179,10 @@
       "Write(*api_key*)",
       "Write(~/.ssh/*)",
       "Write(~/.aws/*)",
-      "Write(~/.config/gcloud/*)"
+      "Write(~/.config/gcloud/*)",
+      "Write(.mcp.json)",
+      "Write(./.mcp.json)",
+      "Write(~/.mcp.json)"
     ],
     "ask": [
       "Bash(npx:*)",
