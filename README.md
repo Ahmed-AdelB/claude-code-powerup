@@ -1,7 +1,7 @@
 # Claude Code Ultimate Power-Up
 
 Complete configuration to supercharge Claude Code with:
-- **85+ Specialized Agents** across 14 categories
+- **25 Specialized Agents** across 3 categories + 2 integrations
 - **20+ Slash Commands** for SDLC automation
 - **MCP Servers** for external tool integration
 - **Hooks** for automation
@@ -23,7 +23,7 @@ copy /Y .mcp.json C:\Users\%USERNAME%\.mcp.json
 
 ## What's Included
 
-### Agents (85+)
+### Agents (25)
 | Category | Examples |
 |----------|----------|
 | 01-general-purpose | Router, orchestrator |
@@ -55,7 +55,8 @@ copy /Y .mcp.json C:\Users\%USERNAME%\.mcp.json
 - **filesystem** - File system access
 - **memory** - Persistent memory
 - **puppeteer** - Browser automation
-- **slack** - Team communication
+- **fetch** - Enhanced web fetching
+- **sqlite** - Local database
 
 ### Hidden Features
 - `!state`, `!tokens`, `!cost`, `!checkpoint`, `!rollback`

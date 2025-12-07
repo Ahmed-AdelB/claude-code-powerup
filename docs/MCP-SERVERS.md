@@ -11,7 +11,6 @@ Model Context Protocol (MCP) servers extend Claude Code with external tool integ
 | **filesystem** | File system access | read/write files outside sandbox |
 | **memory** | Persistent memory | retain context across sessions |
 | **puppeteer** | Browser automation | screenshots, web scraping, testing |
-| **slack** | Team communication | send messages, search channels |
 
 ## Configuration
 
@@ -43,10 +42,7 @@ The MCP servers are configured in `.mcp.json`:
       "command": "npx",
       "args": ["-y", "@anthropic/mcp-server-puppeteer"]
     },
-    "slack": {
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-slack"]
-    }
+
   }
 }
 ```

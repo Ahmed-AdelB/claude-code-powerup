@@ -29,7 +29,7 @@ All critical and high-priority fixes from Gemini's review have been applied.
 
 ### 4. Agent Consolidation (HIGH)
 **Before:** 94 agents ("mimics bureaucracy")
-**After:** 22 agents (77% reduction)
+**After:** 25 agents (73% reduction)
 - 6 Orchestrators (routing, coordination)
 - 6 Core Engineers (backend, frontend, database, devops, cloud, test)
 - 10 Specialists (security, performance, code review, architecture, etc.)
@@ -95,7 +95,7 @@ All critical and high-priority fixes from Gemini's review have been applied.
 
 | Metric | Before | After | Improvement |
 |--------|--------|-------|-------------|
-| **Agents** | 94 | 22 | -77% |
+| **Agents** | 94 | 25 | -73% |
 | **Context Usage** | High | Low | Massive reduction in system prompt |
 | **Routing Clarity** | Ambiguous | Clear | Defined responsibilities |
 | **Security** | High Risk | Secure | npx + Windows protections |

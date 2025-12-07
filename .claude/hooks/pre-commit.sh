@@ -165,7 +165,7 @@ if [ "$TRI_AGENT_ENABLED" = "true" ]; then
     echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 
     # Get staged diff for review
-    STAGED_DIFF=$(git diff --cached --no-color 2>/dev/null | head -500)
+    STAGED_DIFF=$(git diff --cached --no-color 2>/dev/null | head -100)
     REVIEW_PROMPT="Review this code change for security issues, bugs, and best practices. Respond with APPROVE or REJECT with brief reason:\n\n$STAGED_DIFF"
 
     CLAUDE_VOTE="APPROVE"  # Claude is the orchestrator (us)

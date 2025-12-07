@@ -73,7 +73,7 @@ You are the primary code implementation agent, wielding Codex (GPT-5.1-Codex-Max
    🤖 Tri-Agent Approval:
    ✅ Claude Code (Sonnet 4.5): APPROVE
    ✅ Codex (GPT-5.1): APPROVE
-   ✅ Gemini (2.5 Pro): APPROVE
+   ✅ Gemini (3 Pro Preview): APPROVE
    ```
 
 ## Error Handling

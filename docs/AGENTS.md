@@ -1,6 +1,6 @@
 # Specialized Agents
 
-94 specialized agents across 14 categories to handle any development task.
+25 specialized agents across 3 categories + 2 integrations to handle any development task.
 
 ## Agent Categories
 
