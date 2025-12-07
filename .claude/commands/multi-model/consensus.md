@@ -48,7 +48,7 @@ Review this for:
 - Edge case handling
 ```
 
-#### Gemini (2.5 Pro)
+#### Gemini (3 Pro Preview)
 Focus: Architecture, scalability, documentation
 ```markdown
 Review this for:
@@ -88,7 +88,7 @@ Review this for:
 
 ---
 
-### Gemini (2.5 Pro)
+### Gemini (3 Pro Preview)
 **Verdict:** APPROVE / APPROVE_WITH_COMMENTS / REQUEST_CHANGES
 
 **Findings:**
@@ -210,7 +210,7 @@ feat(auth): implement OAuth 2.0 login
 Tri-Agent Approval:
 - Claude Code (Sonnet): APPROVE
 - Codex (GPT-5.1): APPROVE
-- Gemini (2.5 Pro): APPROVE
+- Gemini (3 Pro Preview): APPROVE
 
 Consensus: 3/3 UNANIMOUS
 

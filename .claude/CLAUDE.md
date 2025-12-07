@@ -3,7 +3,7 @@
 ## AI Stack ($420/month)
 - **Claude Max** ($200): Primary orchestrator, 900 msg/5hr, Opus + Sonnet
 - **ChatGPT Pro** ($200): Codex CLI for prototyping, o3-pro for debugging
-- **Google AI Pro** ($20): Gemini 2.5/3 Pro, 1M token context
+- **Google AI Pro** ($20): Gemini 3 Pro Preview (gemini-3-pro-preview), 1M token context
 
 ## 85+ Specialized Agents (14 Categories)
 1. **General Purpose** (6): orchestrator, task-router, context-manager, session-manager, memory-coordinator, parallel-coordinator
@@ -92,7 +92,7 @@ Body explaining what and why
 Tri-Agent Approval:
 - Claude Code (Sonnet): APPROVE
 - Codex (GPT-5.1): APPROVE
-- Gemini (2.5 Pro): APPROVE
+- Gemini (3 Pro Preview): APPROVE
 
 Co-Authored-By: Claude <noreply@anthropic.com>
 ```
@@ -112,7 +112,7 @@ Co-Authored-By: Claude <noreply@anthropic.com>
 # CORRECT - Use positional arguments
 gemini "your prompt here"
 gemini -y "prompt"                    # Auto-approve (YOLO mode)
-gemini -m gemini-2.5-pro "prompt"     # Specify model
+gemini -m gemini-3-pro-preview "prompt"  # Specify model (DEFAULT - always use this)
 gemini --approval-mode yolo "prompt"  # Auto-approve all tools
 
 # WRONG - Deprecated flag
@@ -182,8 +182,8 @@ codex exec --help
 # 2. Codex (implementation)
 codex exec "Review and implement: <task>"
 
-# 3. Gemini (validation/security)
-gemini -y "Review for security issues: <code>"
+# 3. Gemini (validation/security) - ALWAYS use gemini-3-pro-preview
+gemini -m gemini-3-pro-preview -y "Review for security issues: <code>"
 ```
 
 ## Code Style

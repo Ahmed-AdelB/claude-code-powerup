@@ -20,11 +20,12 @@ You coordinate with Gemini CLI for code review and security analysis as part of 
 Use the `gemini` CLI command (requires Google AI Pro subscription):
 
 ```bash
+# ALWAYS use gemini-3-pro-preview model explicitly
 # Basic query
-gemini "Review this code for security issues: $(cat file.py)"
+gemini -m gemini-3-pro-preview "Review this code for security issues: $(cat file.py)"
 
 # Code review with context
-gemini "Analyze this implementation for:
+gemini -m gemini-3-pro-preview "Analyze this implementation for:
 1. Security vulnerabilities (OWASP Top 10)
 2. Code quality issues
 3. Performance concerns
@@ -34,7 +35,7 @@ Code:
 $(cat src/auth.py)"
 
 # Design review
-gemini "Review this API design for RESTful best practices:
+gemini -m gemini-3-pro-preview "Review this API design for RESTful best practices:
 $(cat api-spec.yaml)"
 ```
 
@@ -43,7 +44,7 @@ $(cat api-spec.yaml)"
 Request structured JSON responses:
 
 ```bash
-gemini "Review code and respond in JSON format:
+gemini -m gemini-3-pro-preview "Review code and respond in JSON format:
 {
   \"approval\": \"APPROVE|REQUEST_CHANGES|REJECT\",
   \"summary\": \"brief summary\",
@@ -59,7 +60,7 @@ $(cat file.py)"
 
 ### Security Review
 ```bash
-gemini "Perform security audit:
+gemini -m gemini-3-pro-preview "Perform security audit:
 - Check for injection vulnerabilities
 - Validate authentication/authorization
 - Review data handling
@@ -71,7 +72,7 @@ $(cat src/auth/*.py)"
 
 ### Code Quality Review
 ```bash
-gemini "Review code quality:
+gemini -m gemini-3-pro-preview "Review code quality:
 - Naming conventions
 - Code organization
 - Error handling
@@ -83,7 +84,7 @@ $(cat src/service.py)"
 
 ### Architecture Review
 ```bash
-gemini "Review architecture decisions:
+gemini -m gemini-3-pro-preview "Review architecture decisions:
 - Design patterns used
 - Separation of concerns
 - Scalability considerations
@@ -98,7 +99,7 @@ When participating in tri-agent consensus:
 
 1. **Collect vote from Gemini**:
 ```bash
-gemini "As a code reviewer, vote on this change:
+gemini -m gemini-3-pro-preview "As a code reviewer, vote on this change:
 APPROVE - if code is production-ready
 REQUEST_CHANGES - if minor fixes needed
 REJECT - if major issues exist

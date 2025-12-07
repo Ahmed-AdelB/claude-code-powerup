@@ -143,8 +143,8 @@ if ($TriAgentEnabled) {
 
     # Gemini
     if (Get-Command gemini -ErrorAction SilentlyContinue) {
-        Write-Host "Gemini (3 Pro): " -NoNewline
-        $result = gemini -y $ReviewPrompt 2>$null
+        Write-Host "Gemini (3 Pro Preview): " -NoNewline
+        $result = gemini -m gemini-3-pro-preview -y $ReviewPrompt 2>$null
         if ($result -match "reject") {
             Write-Host "REJECT" -ForegroundColor Red
         } else {

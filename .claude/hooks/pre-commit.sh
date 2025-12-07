@@ -191,10 +191,10 @@ if [ "$TRI_AGENT_ENABLED" = "true" ]; then
         echo "Codex (GPT-5.1): SKIP (not installed)"
     fi
 
-    # Call Gemini CLI if available (Gemini 3 Pro)
+    # Call Gemini CLI if available (Gemini 3 Pro Preview)
     if command -v gemini &> /dev/null; then
-        echo -n "Gemini (3 Pro): "
-        GEMINI_RESULT=$(timeout 30 gemini -y "$REVIEW_PROMPT" 2>/dev/null || echo "APPROVE (timeout)")
+        echo -n "Gemini (3 Pro Preview): "
+        GEMINI_RESULT=$(timeout 30 gemini -m gemini-3-pro-preview -y "$REVIEW_PROMPT" 2>/dev/null || echo "APPROVE (timeout)")
         if echo "$GEMINI_RESULT" | grep -qi "reject"; then
             GEMINI_VOTE="REJECT"
             echo "REJECT ❌"
@@ -205,7 +205,7 @@ if [ "$TRI_AGENT_ENABLED" = "true" ]; then
         fi
     else
         GEMINI_VOTE="SKIP"
-        echo "Gemini (3 Pro): SKIP (not installed)"
+        echo "Gemini (3 Pro Preview): SKIP (not installed)"
     fi
 
     # Calculate consensus (need 2/3 or 2/2 approvals)
