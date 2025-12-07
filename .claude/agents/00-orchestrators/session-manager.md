@@ -1,7 +1,7 @@
 ---
 name: session-manager
 description: Manages session state, progress tracking, and ensures continuity across conversation turns. Use to save/restore session state and track progress.
-model: claude-haiku-4-5-20251001
+model: haiku
 tools: [Read, Write, TodoWrite]
 ---
 
