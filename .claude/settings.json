@@ -6,7 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "$HOME/.claude/hooks/pre-commit.sh"
+            "command": "powershell -ExecutionPolicy Bypass -File $HOME/.claude/hooks/pre-commit.ps1"
           }
         ]
       }
@@ -17,7 +17,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "$HOME/.claude/hooks/post-edit.sh"
+            "command": "powershell -ExecutionPolicy Bypass -File $HOME/.claude/hooks/post-edit.ps1"
           }
         ]
       },
@@ -26,7 +26,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "$HOME/.claude/hooks/post-edit.sh"
+            "command": "powershell -ExecutionPolicy Bypass -File $HOME/.claude/hooks/post-edit.ps1"
           }
         ]
       }
@@ -36,7 +36,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "$HOME/.claude/hooks/quality-gate.sh"
+            "command": "powershell -ExecutionPolicy Bypass -File $HOME/.claude/hooks/quality-gate.ps1"
           }
         ]
       }
@@ -54,7 +54,6 @@
   "permissions": {
     "allow": [
       "Bash(npm:*)",
-      "Bash(npx:*)",
       "Bash(pnpm:*)",
       "Bash(yarn:*)",
       "Bash(bun:*)",
@@ -157,10 +156,17 @@
       "Bash(sudo *)",
       "Bash(chmod 777 *)",
       "Bash(chown *)",
+      "Bash(Remove-Item * -Recurse -Force)",
+      "Bash(Remove-Item C:\\ -Recurse *)",
+      "Bash(Remove-Item $HOME -Recurse *)",
+      "Bash(Format-Volume *)",
+      "Bash(Clear-Disk *)",
       "Bash(*prod*)",
       "Bash(*production*)",
       "Bash(shutdown *)",
       "Bash(reboot *)",
+      "Bash(Restart-Computer *)",
+      "Bash(Stop-Computer *)",
       "Bash(mkfs *)",
       "Bash(dd if=*)",
       "Write(.env)",
@@ -176,6 +182,7 @@
       "Write(~/.config/gcloud/*)"
     ],
     "ask": [
+      "Bash(npx:*)",
       "Bash(git push *)",
       "Bash(git commit *)",
       "Bash(git merge *)",
